@@ -11,8 +11,8 @@ class App extends Component {
 
     this.state = { videos: [] };
 
-    YTSearch({'key': API_KEY, term: 'surfboards'}, function(videos) {
-      this.setState({ videos: videos });
+    YTSearch({'key': API_KEY, term: 'surfboards'}, (videos) => {
+      this.setState({ videos });
     });
   }
 
